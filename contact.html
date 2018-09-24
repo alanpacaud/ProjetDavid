@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>davidoryphore Peinture/Dessin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>DaviDoryphore<br>Peintre & dessinateur
+        </h1>
+        <truc>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="commandes.html">Commandes/Devis</a></li>
+            <li><a href="quiSuisJe.html">Qui suis-je</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+            <a id="logoInsta" href="https://www.instagram.com/davidoryphore_/"></a>
+
+
+        </truc>
+
+    </header>
+    <p>
+
+        VOICI LA PAGE DE CONTACT<br><br>
+        David Gautier<br>
+        + Amateurillustratoriphore.<br>
+        + Croqueur de croquis en tout genre ✏<br>
+        + Théatre 🎩 <br>
+        + Univers glauquilouphoque.<br>
+        + In love with wildlife.<br>
+        + Welcome.<br>
+    </p>
+    <p>
+      Si vous regardez cette page avec Microsoft Internet Explorer 5 or 6 sous Windows (“WinIE5” and “WinIE6”), vous constaterez qu'elle ne marche pas. Beaucoup de personnes me demandent pourquoi, voici une brève explication: le problème réside dans le navigateur, pas dans la page.
+
+WinIE5 et WinIE6 n'implémentent pas la propriété 'fixed'. C'est fâcheux, mais le problème principal est qu'ils n'analysent pas correctement la propriété 'position' non plus. Un navigateur qui ne connaît pas la propriété 'fixed' devrait passer outre la règle 'position: fixed' et se replier sur la valeur de 'position' définie précédemment dans la feuille de style. On pourrait ainsi ajouter la règle 'position: absolute' juste avant la propriété 'fixed' et le navigateur l'utiliserait. Mais sous WinIE 5 et 6, ce n'est pas ce qui se produit. Apparemment, le mot-clé 'fixed' semble interprété comme 'static'.
+
+Vous ne pouvez pas faire que WinIE5 et 6 supportent 'fixed', mais il y a un moyen de contourner le problème d'analyse. Johannes Koch m'a indiqué cette astuce (depuis sa collection d'astuces). Remplacez d'abord la règle 'position: fixed' par 'position: absolute' puis insérez la règle suivante dans la feuille de style:
+
+*>#intro {position: fixed}
+Ceci a pour effet que les navigateurs qui supportent le sélecteur CSS '>' (child) appliqueront cette règle, mais que les autres navigateurs. et en particulier WinIE5 and WinIE6, l'ignoreront. La règle 'position: absolute' sera utilisée à la place et le menu sera au bon endroit, mais il ne restera pas fixe quand vous ferez défiler la page.
+
+Notez qu'il est important qu'il n'y ait pas d'espace autour du '>'.  
+    </p>
+</body>
+
+</html>
